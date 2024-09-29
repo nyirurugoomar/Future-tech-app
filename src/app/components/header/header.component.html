@@ -1,0 +1,84 @@
+<header class="w-full h-20 z-[100]  ">
+    <div class="md:flex grid grid-cols-1 lg:grid-cols-3 gap-10 justify-between  p-4  items-center bg-[#1A1A1A]">
+      <!-- Logo -->
+      <a routerLink="/">
+        <img src="Logo.png" alt="logo" width="143.13" height="40">
+      </a>
+  
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-8">
+        <a routerLink="/" class="text-[#7E7E81] text-[14px] font-lexend">Home</a>
+        <a routerLink="/careers" class="text-[#7E7E81] text-[14px] font-lexend">News</a>
+        <a routerLink="/about" class="text-[#7E7E81] text-[14px] font-lexend">Podcasts</a>
+        <a routerLink="/security" class="text-[#7E7E81] text-[14px] font-lexend">Resources</a>
+      </div>
+  
+      <!-- Desktop Buttons -->
+      <div class="hidden md:flex gap-6">
+        <a routerLink="/Contact">
+          <button class="text-grayshades-11 text-[14px] font-medium bg-[#FFD11A] rounded-[6px] w-[103px] h-[41px]">
+            Contact Us
+          </button>
+        </a>
+      </div>
+  
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden cursor-pointer" (click)="handleNav()">
+        <img src="assets/Button_mobile.svg" alt="" width="56" height="40">
+      </div>
+    </div>
+  
+    <!-- Mobile Menu Overlay -->
+    <!-- <div *ngIf="nav" class="md:hidden fixed left-0 top-0 w-full h-screen bg-black/70">
+      <div class="fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-grayshades-15 p-10 ease-in duration-500">
+        <div class="flex w-full items-center justify-between">
+          <a routerLink="/">
+            <img src="assets/Logo_header.png" width="140" height="140" alt="/">
+          </a>
+          <div (click)="handleNav()" class="rounded-full shadow-lg shadow-greenshades-60 p-3 cursor-pointer">
+            <i class="text-white" [ngClass]="'close-icon-class'"></i>
+          </div>
+        </div>
+  
+        Mobile Menu Links
+        <ul class="py-2 flex flex-col uppercase">
+          <li class="py-4 text-sm text-white" (click)="handleNav()">
+            <a routerLink="/">Home</a>
+          </li>
+          <li class="py-4 text-sm text-white" (click)="handleNav()">
+            <a routerLink="/careers">Careers</a>
+          </li>
+          <li class="py-4 text-sm text-white" (click)="handleNav()">
+            <a routerLink="/about">About</a>
+          </li>
+          <li class="py-4 text-sm text-white" (click)="handleNav()">
+            <a routerLink="/security">Security</a>
+          </li>
+        </ul>
+  
+        Mobile Buttons
+        <div class="flex gap-6">
+          <a routerLink="/signup" (click)="handleNav()">
+            <button class="text-grayshades-11 font-semibold bg-greenshades-60 rounded-[82px] w-[87px] h-[45px]">
+              SignUp
+            </button>
+          </a>
+          <a routerLink="/login" (click)="handleNav()">
+            <button class="text-grayshades-11 font-semibold bg-greenshades-60 rounded-[82px] w-[87px] h-[45px]">
+              Login
+            </button>
+          </a>
+        </div>
+  
+        Social Media Icons
+        <div class="pt-10">
+          <p class="tracking-widest text-white">Talk to us 🤙</p>
+          <div class="flex gap-2">
+            <img src="assets/Facebook_icon.svg" alt="" width="44" height="44">
+            <img src="assets/LinkedIn_icon.svg" alt="" width="44" height="44">
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </header>
+  
