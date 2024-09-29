@@ -1,1 +1,51 @@
-<p>hero works!</p>
+<div class="md:w-full md:mx-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-2 justify-center md:mx-auto mx-4 md:p-14 md:gap-28 gap-10 p-4"
+  >
+    <div class="md:w-[720px] md:space-y-6 space-y-4 md:mt-8">
+      <p class="text-Dark-40 text-[22px] font-medium">
+        Your Journey to Tomorrow Begins Here
+      </p>
+      <h1
+        class="font-lexend md:text-[48px] text-[28px] font-[600] text-white md:leading-[64px] md:text-start text-center w-[717px] h-[132px]"
+      >
+        Explore the Frontiers of <br />Artificial Intelligence
+      </h1>
+      <p class="text-Grey-50 text-[16px]">
+        Welcome to the epicenter of AI innovation. FutureTech AI News is your
+        passport to a world where machines think, learn, and reshape the future.
+        Join us on this visionary expedition into the heart of AI.
+      </p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 justify-center md:mx-auto mx-2 pt-24 ">
+        <div class="border-[1px] border-Dark-15 p-10">
+          <h1 class="text-white text-[30px]">300<span class="text-Yellow-55">+</span></h1>
+          <p class="text-Grey-60 text-[14px]">Resources available</p>
+        </div>
+        <div class="border-[1px] border-Dark-15 p-10">
+            <h1 class="text-white text-[30px]">12k<span class="text-Yellow-55">+</span></h1>
+            <p class="text-Grey-60 text-[14px]">Total Downloads</p>
+          </div>
+          <div class="border-[1px] border-Dark-15 p-10">
+            <h1 class="text-white text-[30px]">10k<span class="text-Yellow-55">+</span></h1>
+            <p class="text-Grey-60 text-[14px]">Active Users</p>
+          </div>
+      </div>
+    </div>
+    <div class="border-Dark-15 border-[1px]">
+      <img src="Hero_photo.png" alt="hero" width="554" height="568" />
+
+      <div class="avatar-group ml-10">
+        <img
+          *ngFor="let avatar of avatars; let i = index"
+          [src]="avatar"
+          [class.hidden]="i >= maxAvatars"
+        />
+      </div>
+      <div class="ml-10 my-10">
+        <h3 class="text-white text-[20px]">Explore 1000+ resources</h3>
+        <p class="text-Grey-60 text-[16px]">Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
