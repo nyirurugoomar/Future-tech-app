@@ -4,3 +4,11 @@ export interface Number{
     text: string;
 
 }
+
+export interface Status{
+    id?:number;
+    icon:string;
+    title:string;
+    subTitle:string;
+    specification:string;
+}

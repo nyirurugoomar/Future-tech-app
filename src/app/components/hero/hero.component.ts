@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {Number} from '../../data'
-import {Numbers} from '../../mock-data'
+import {Number,Status} from '../../data'
+import {Numbers,Statuses} from '../../mock-data'
+
 
 @Component({
   selector: 'app-hero',
@@ -13,6 +14,7 @@ import {Numbers} from '../../mock-data'
 export class HeroComponent {
  
   numbers: Number[] = Numbers;
+  statuses: Status[] = Statuses;
 
   avatars = [
     'https://i.pravatar.cc/150?u=a042581f4e29026024d',
