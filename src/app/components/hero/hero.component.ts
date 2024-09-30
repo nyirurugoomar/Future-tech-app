@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {Number} from '../../data'
+import {Numbers} from '../../mock-data'
 
 @Component({
   selector: 'app-hero',
@@ -9,6 +11,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
+ 
+  numbers: Number[] = Numbers;
+
   avatars = [
     'https://i.pravatar.cc/150?u=a042581f4e29026024d',
     'https://i.pravatar.cc/150?u=a04258a2462d826712d',

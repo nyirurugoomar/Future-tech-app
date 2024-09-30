@@ -15,19 +15,15 @@
         passport to a world where machines think, learn, and reshape the future.
         Join us on this visionary expedition into the heart of AI.
       </p>
-      <div class="grid grid-cols-1 lg:grid-cols-3 justify-center md:mx-auto mx-2 pt-24 ">
-        <div class="border-[1px] border-Dark-15 p-10">
-          <h1 class="text-white text-[30px]">300<span class="text-Yellow-55">+</span></h1>
-          <p class="text-Grey-60 text-[14px]">Resources available</p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 justify-center md:mx-auto mx-2 pt-24">
+        <!-- Loop through the numbers array and display each number's text -->
+        <div *ngFor="let number of numbers; let i = index" class="border-[1px] border-Dark-15 p-10">
+          <h1 class="text-white text-[30px]">{{ number.number }}<span class="text-Yellow-55">+</span></h1>
+          <p class="text-Grey-60 text-[14px]">
+            <!-- Display different text for each index -->
+            {{ i === 0 ? 'Resources available' : i === 1 ? 'Total Downloads' : 'Active Users' }}
+          </p>
         </div>
-        <div class="border-[1px] border-Dark-15 p-10">
-            <h1 class="text-white text-[30px]">12k<span class="text-Yellow-55">+</span></h1>
-            <p class="text-Grey-60 text-[14px]">Total Downloads</p>
-          </div>
-          <div class="border-[1px] border-Dark-15 p-10">
-            <h1 class="text-white text-[30px]">10k<span class="text-Yellow-55">+</span></h1>
-            <p class="text-Grey-60 text-[14px]">Active Users</p>
-          </div>
       </div>
     </div>
     <div class="border-Dark-15 border-[1px]">
