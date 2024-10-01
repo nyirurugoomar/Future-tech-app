@@ -1,5 +1,6 @@
 import { Number } from "./data"
 import {Status} from "./data"
+import { Review } from "./data"
 
 export const Numbers:Number[] =[
     {   
@@ -41,4 +42,50 @@ export const Statuses:Status[]=[
         subTitle:"Worldwide Impact",
         specification:"2 million monthly readers"
     }
+]
+
+export const Reviews:Review[]=[
+    {
+      id:1,
+      profileImage:"p1.svg",
+      profileName:"Sarah Thompson",
+      location:"San Francisco, USA",
+      message:"The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated."
+    },
+    {
+        id:2,
+        profileImage:"p2.svg",
+        profileName:"Raj Patel",
+        location:"Mumbai, India",
+        message:"The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis."
+      },
+      {
+        id:3,
+        profileImage:"p3.svg",
+        profileName:"Emily Adams",
+        location:"London, UK",
+        message:"The AI in healthcare reports have been an essential resource for our hospital. They highlight the latest innovations and best practices, improving patient care."
+      },
+      {
+        id:4,
+        profileImage:"p4.svg",
+        profileName:"Alan Jackson",
+        location:"Houston, USA",
+        message:"The reports on space mining prospects have fueled my passion for space exploration. They provide a comprehensive view."
+      },
+      {
+        id:5,
+        profileImage:"p5.svg",
+        profileName:"Jessica Miller",
+        location:"Boston, USA",
+        message:"The research papers on genomic breakthroughs have been a goldmine of information. They've shaped the direction of my research in genomics."
+      },
+      {
+        id:6,
+        profileImage:"p6.svg",
+        profileName:"Diego Lopez",
+        location:"Barcelona, Spain",
+        message:"The ebooks on renewable energy strategies have given me the insights I needed to pivot our startup toward sustainability."
+      },
+
 ]

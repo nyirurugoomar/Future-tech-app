@@ -12,3 +12,12 @@ export interface Status{
     subTitle:string;
     specification:string;
 }
+
+export interface Review{
+    id:number;
+    profileImage: string;
+    profileName: string;
+    location: string;
+    message: string;
+
+}
