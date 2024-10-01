@@ -1,6 +1,7 @@
 import { Number } from "./data"
 import {Status} from "./data"
 import { Review } from "./data"
+import { Connect } from "./data"
 
 export const Numbers:Number[] =[
     {   
@@ -88,4 +89,22 @@ export const Reviews:Review[]=[
         message:"The ebooks on renewable energy strategies have given me the insights I needed to pivot our startup toward sustainability."
       },
 
+]
+
+export const Connects:Connect[]=[
+    {
+        id:1,
+        title:"Resource Access",
+        specs:"Visitors can access a wide range of resources, including ebooks, whitepapers, reports."
+    },
+    {
+        id:2,
+        title:"Community Forum",
+        specs:"Join our active community forum to discuss industry trends and collaborate with peers."
+    },
+    {
+        id:3,
+        title:"Tech Events",
+        specs:"Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge."
+    }
 ]

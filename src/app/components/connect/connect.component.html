@@ -1,0 +1,27 @@
+<div class="md:w-full md:mx-auto">
+    <div class="p-10 bg-Dark-10 ">
+        <div class="flex items-center gap-10">
+            <div>
+                <img src="LogoBig.png" alt="" width="120" height="120">
+            </div>
+            <div>
+                <h3 class="text-white text-[16px] font-medium bg-Dark-20 p-2   w-[230px] h-[32px] rounded-[4px]">Learn, Connect, and Innovate</h3>
+                 <h1 class="text-white text-[44px] font-medium">Be Part of the Future Tech Revolution</h1>
+                 <p class="text-Grey-50 text-[14px]">Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 justify-center mx-auto">
+            <div *ngFor="let connect of connects; let i= index" class="bg-Dark-8 p-6">
+                <div class="bg-Dark-10 p-2 rounded-[10px] border-Dark-15 border-[1px]" >
+                    <div class="flex justify-between">
+                         <h1 class="text-white text-[18px] font-semibold">{{connect.title}}</h1>
+                         <img src="Arrow.svg" alt="" width="44" height="44">
+                    </div>
+                    <p class="text-Grey-60 text-[16px] ">{{connect.specs}}</p>
+                </div>
+            </div>
+        </div>
+        
+   </div> 
+</div>

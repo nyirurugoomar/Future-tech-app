@@ -21,3 +21,9 @@ export interface Review{
     message: string;
 
 }
+
+export interface Connect{
+  id?: number;
+  title: string;
+  specs: string;
+}
